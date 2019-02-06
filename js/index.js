@@ -1,4 +1,4 @@
-var slideshowDuration = 5000;
+var slideshowDuration = 10000;
 var slideshow=$('.main-content .slideshow');
 
 function slideshowSwitch(slideshow,index,auto){
@@ -218,3 +218,7 @@ slideshow.data('timeout',timeout);
 if($('.main-content .slideshow').length > 1) {
   $(window).on('scroll',homeSlideshowParallax);
 }
+
+$('.enter_link').click(function() {
+       $(this).parent().parent().fadeOut(500);
+});

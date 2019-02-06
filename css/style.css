@@ -1,6 +1,52 @@
 body {
   font: 14px/2 "Open sans",sans-serif;
   letter-spacing: 0.05em;
+  overflow:hidden;
+}
+
+#splashscreen {
+    margin:0;
+    padding:0;
+    width:100vw;
+    height:100vh;
+    background-image: url("../img/designB.jpg");
+    background-position: center;
+    background-size: cover;
+    color:white;
+    background-color: black;
+}
+
+
+.welcome {
+  display: block;
+  position: relative;
+  margin: auto;
+  font: 300 50px/1.2 "Oswald", sans-serif;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  text-align: center;
+  top:32vh;
+  width: 500px;
+  align-self: center;
+}
+
+.subtitle {
+  font: 14px/2 "Open sans",sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: none;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.git {
+  display: block;
+  position: absolute;
+  font-size: 8em;
+  top: 22vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+
 }
 
 .btn {
@@ -11,7 +57,7 @@ body {
   position: relative;
   background: transparent;
   border: 1px solid #e1e1e1;
-  font: 12px/1.2 "Oswald", sans-serif;
+  font: 16px/1.2 "Oswald", sans-serif;
   letter-spacing: 0.4em;
   text-align: center;
   text-indent: 2px;
@@ -115,7 +161,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
 }
 .slideshow .slide .image {
   width: 100%;
@@ -150,6 +196,7 @@ body {
   line-height: 1.4;
 }
 .slideshow .slide .btn {
+  font-size: 16px;
   margin: 15px 0 0;
   border-color: #fff;
 }
@@ -227,3 +274,8 @@ body {
   fill: #fff;
   transition: left 0.2s ease;
 }
+
+/*
+@media (max-width:650px){.welcome{width:80vw; top:20vh; font-size: 2em} .subtitle{font-size: 0.4em; line-height: 1.5em}
+}
+*/
